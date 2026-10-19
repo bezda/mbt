@@ -1,0 +1,33 @@
+{
+    "protocol": "http",
+    "port": 7891,
+    "name": "similarai",
+    "numberOfRequests": 0,
+    "requests": [],
+    "defaultResponse": {
+       "statusCode": 404,
+       "body" : {
+         "errors": [{
+             "code": 404,
+             "message": "similarai imposter is found but no predicate matched the request."
+         }]
+      }
+ },
+    "stubs": [
+       {
+          "predicates": [
+             {
+                "matches": {
+                   "path": "/api/seo-related-searches/",
+                   "method": "POST"
+                }
+             }
+          ],
+          "responses": [
+             {
+                "inject": "<%- stringify(filename, 'similarai/topSearches.js')%>"
+             }
+          ]
+       }
+    ]
+ }

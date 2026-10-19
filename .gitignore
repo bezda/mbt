@@ -1,0 +1,14 @@
+dist/
+.vscode/
+.idea/
+tmp/
+node_modules/
+
+*.iml
+src/package.json
+*.log
+**/messagebox/*.js
+**/threatmetrix/*.js
+**/marketingcloud/*.js
+
+*.pid

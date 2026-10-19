@@ -1,0 +1,11 @@
+{
+  "protocol": "http",
+  "port": 1112,
+  "name": "version",
+  "stubs": [
+    {
+      "predicates": [],
+      "responses": [ { "inject": "<%- stringify(filename, 'version/version.js') %>" } ]
+    }
+  ]
+}

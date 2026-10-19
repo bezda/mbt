@@ -1,0 +1,5 @@
+{
+  "grpc": {
+    "createCommand": "/usr/local/mountebank-v2.3.3-linux-x64/node-v12.9.1-linux-x64/bin/node /usr/share/freeside/thirdparty-mocks/plugins/grpc/index.js"
+  }
+}
